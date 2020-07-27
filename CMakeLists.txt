@@ -8,7 +8,7 @@ option(FREETYPE_WITH_PNG "Link libpng and zlib because FreeType is configured to
 option(FREETYPE_WITH_HARFBUZZ "Link HarfBuzz because FreeType is configured to require it" OFF)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
-
+SET(FREETYPE_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/freetype/include)
 find_package(Freetype REQUIRED)
 
 #----------------------------------------------------------------
